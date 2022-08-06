@@ -1,0 +1,7 @@
+scrapy
+web-poet
+scrapy-poet
+spidermon
+jsonschema
+scrapy-jsonschema
+scrapy-playwright
