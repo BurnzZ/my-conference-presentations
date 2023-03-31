@@ -1,6 +1,5 @@
-from web_poet import ItemWebPage, WebPage
-
 from books_to_scrape.items import BookItem, BookSchemaItem
+from web_poet import ItemWebPage, WebPage
 
 
 class HomePage(WebPage):

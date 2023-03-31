@@ -1,12 +1,12 @@
 import scrapy
-
-from books_to_scrape.page_objects import HomePage, BookCategoryPage, BookPageUsingSchema
+from books_to_scrape.page_objects import (BookCategoryPage,
+                                          BookPageUsingSchema, HomePage)
 
 
 class Books6Spider(scrapy.Spider):
-    name = '6-books'
-    allowed_domains = ['books.toscrape.com']
-    start_urls = ['http://books.toscrape.com/']
+    name = "6-books"
+    allowed_domains = ["books.toscrape.com"]
+    start_urls = ["http://books.toscrape.com/"]
 
     custom_settings = {
         "ITEM_PIPELINES": {

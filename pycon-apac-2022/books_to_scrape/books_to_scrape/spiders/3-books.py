@@ -1,12 +1,11 @@
 import scrapy
-
 from books_to_scrape.items import BookItem
 
 
 class Books3Spider(scrapy.Spider):
-    name = '3-books'
-    allowed_domains = ['books.toscrape.com']
-    start_urls = ['http://books.toscrape.com/']
+    name = "3-books"
+    allowed_domains = ["books.toscrape.com"]
+    start_urls = ["http://books.toscrape.com/"]
 
     def parse(self, response):
         for url in response.css(".nav-list ul li a ::attr(href)").getall():

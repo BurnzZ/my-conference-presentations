@@ -2,9 +2,9 @@ import scrapy
 
 
 class Books2Spider(scrapy.Spider):
-    name = '2-books'
-    allowed_domains = ['books.toscrape.com']
-    start_urls = ['http://books.toscrape.com/']
+    name = "2-books"
+    allowed_domains = ["books.toscrape.com"]
+    start_urls = ["http://books.toscrape.com/"]
 
     def parse(self, response):
         for url in response.css(".nav-list ul li a ::attr(href)").getall():

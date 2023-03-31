@@ -2,9 +2,9 @@ import scrapy
 
 
 class Books1Spider(scrapy.Spider):
-    name = '1-books'
-    allowed_domains = ['books.toscrape.com']
-    start_urls = ['http://books.toscrape.com/']
+    name = "1-books"
+    allowed_domains = ["books.toscrape.com"]
+    start_urls = ["http://books.toscrape.com/"]
 
     def parse(self, response):
         for url in response.css(".product_pod a ::attr(href)").getall():

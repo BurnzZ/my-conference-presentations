@@ -1,12 +1,11 @@
 import scrapy
-
-from books_to_scrape.page_objects import HomePage, BookCategoryPage, BookPage
+from books_to_scrape.page_objects import BookCategoryPage, BookPage, HomePage
 
 
 class Books4Spider(scrapy.Spider):
-    name = '4-books'
-    allowed_domains = ['books.toscrape.com']
-    start_urls = ['http://books.toscrape.com/']
+    name = "4-books"
+    allowed_domains = ["books.toscrape.com"]
+    start_urls = ["http://books.toscrape.com/"]
 
     def parse(self, response, page: HomePage):
         for url in page.category_urls:

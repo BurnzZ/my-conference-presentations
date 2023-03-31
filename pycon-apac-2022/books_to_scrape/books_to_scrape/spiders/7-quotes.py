@@ -2,8 +2,8 @@ import scrapy
 
 
 class Quotes7Spider(scrapy.Spider):
-    name = '7-quotes'
-    allowed_domains = ['quotes.toscrape.com']
+    name = "7-quotes"
+    allowed_domains = ["quotes.toscrape.com"]
 
     custom_settings = {
         "DOWNLOAD_HANDLERS": {

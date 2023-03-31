@@ -28,25 +28,15 @@ class BookSchemaItem(JsonSchemaItem):
             "url": {
                 "description": "Book's URL",
                 "type": "string",
-                "pattern": "^https?://[\\S]+$"
+                "pattern": "^https?://[\\S]+$",
             },
             "category_name": {
                 "description": "Name of the category which the book belongs to",
-                "type": "string"
+                "type": "string",
             },
-            "title": {
-                "description": "Book's title",
-                "type": "string"
-            },
-            "price": {
-                "description": "Book's price",
-                "minimum": 0,
-                "type": "number"
-            },
-            "availability": {
-                "description": "Book's availability",
-                "type": "string"
-            }
+            "title": {"description": "Book's title", "type": "string"},
+            "price": {"description": "Book's price", "minimum": 0, "type": "number"},
+            "availability": {"description": "Book's availability", "type": "string"},
         },
-        "required": ["url"]
+        "required": ["url"],
     }

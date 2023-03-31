@@ -1,12 +1,11 @@
 import scrapy
-
-from books_to_scrape.page_objects import HomePage, BookCategoryPage, BookPage
+from books_to_scrape.page_objects import BookCategoryPage, BookPage, HomePage
 
 
 class Books5Spider(scrapy.Spider):
-    name = '5-books'
-    allowed_domains = ['books.toscrape.com']
-    start_urls = ['http://books.toscrape.com/']
+    name = "5-books"
+    allowed_domains = ["books.toscrape.com"]
+    start_urls = ["http://books.toscrape.com/"]
 
     custom_settings = {
         "SPIDERMON_ENABLED": True,
