@@ -13,4 +13,4 @@ much easier.
 Links:
 
 - [Slides](https://docs.google.com/presentation/d/1li84FhZ_HLRSy8uk36XxXMmWruDZ4D3LgwoPj-nxYLw/edit?usp=sharing)
-- Recording
+- [Recording](https://www.youtube.com/watch?v=elCxMKV_7bY)
